@@ -13,6 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 body {
+  font-family: 'Times New Roman', Times, serif;
   margin: 0;
   margin-top: 10px;
   padding: 0;
@@ -29,7 +30,7 @@ body {
   background-color: chocolate;
   transition: 0.2s;
 }
-.students-list {
+.parent-element {
   margin-top: 30px;
   display: flex;
   justify-content: space-around;
@@ -44,4 +45,7 @@ body {
 .inputField {
   width: 300px;
   height: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-indent: 10px;
 }
