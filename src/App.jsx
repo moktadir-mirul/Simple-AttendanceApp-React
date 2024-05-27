@@ -94,7 +94,7 @@ function App() {
       <div className="mainArea">
         <div className="inputArea">
           <form onSubmit={submitHandler}>
-            <input type="text" className="inputField" value={studentName} onChange={inputHandler}/>
+            <input type="text" className="inputField" value={studentName} onChange={inputHandler} placeholder='Enter the student name'/>
             <button type='submit' className="btnAll">{editMode === true ? 'Update Student Name' : 'Add Student Name'}</button>
           </form>
         </div>

@@ -44,4 +44,5 @@ body {
 .inputField {
   width: 300px;
   height: 25px;
+  text-indent: 10px;
 }
