@@ -68,7 +68,7 @@ function App() {
 
   const sentToAbsentList = (student) => {
     if (student.isPresent === true || student.isPresent === false) {
-      return alert('The student is already in some list')
+      return alert(`The student is already in ${student.isPresent === true ? 'Present List' : 'Absent List'}`)
     }
     const updatedAbsentList = students.map((item) => {
       if (item.id === student.id) {
