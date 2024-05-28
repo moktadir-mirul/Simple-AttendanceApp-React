@@ -1,6 +1,9 @@
-function PresentStudentsList(props) {
+import { useContext } from "react";
+import { ContextFunction } from "../Context/ContextAPI";
+
+function PresentStudentsList() {
     
-    const {students, toggleList} = props;
+    const {students, toggleList} = useContext(ContextFunction);
 
     return (
         <div className="present-list lists">

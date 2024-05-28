@@ -1,43 +1,9 @@
-function AllStudentsList (props) {
+import { useContext } from "react";
+import { ContextFunction } from "../Context/ContextAPI";
 
-    const {setEditMode, setStudentName, setEditableStudents, setStudents, students} = props;
+function AllStudentsList () {
 
-    const editHandler = (student) => {
-        setEditMode(true);
-        setStudentName(student.name);
-        setEditableStudents(student);
-      }
-
-  const sentToPresentList = (student) => {
-    if (student.isPresent === true || student.isPresent === false) {
-      return alert(`The student is already in ${student.isPresent === true ? 'Present List' : 'Absent List'}`)
-    }
-    const updatedPresentList = students.map((item) => {
-      if (item.id === student.id) {
-        return {...item, isPresent: true}
-      } 
-      return item
-    }) 
-    setStudents(updatedPresentList);
-  }
-
-  const sentToAbsentList = (student) => {
-    if (student.isPresent === true || student.isPresent === false) {
-      return alert(`The student is already in ${student.isPresent === true ? 'Present List' : 'Absent List'}`)
-    }
-    const updatedAbsentList = students.map((item) => {
-      if (item.id === student.id) {
-        return {...item, isPresent: false}
-      } 
-      return item
-    }) 
-    setStudents(updatedAbsentList);
-  }
-
-  const removeHandler = (studentId) => {
-    const updatedArr = students.filter((student) => student.id !== studentId);
-    setStudents(updatedArr);
-  }
+    const {editHandler, removeHandler,sentToPresentList, sentToAbsentList, students} = useContext(ContextFunction);
 
     return (
         <div className="all-students lists">

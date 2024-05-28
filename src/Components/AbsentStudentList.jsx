@@ -1,5 +1,8 @@
-function AbsentStudentsList(props) {
-    const {students, toggleList} = props;
+import { useContext } from "react";
+import { ContextFunction } from "../Context/ContextAPI";
+
+function AbsentStudentsList() {
+    const {students, toggleList} = useContext(ContextFunction);
     return (
         <div className="absent-list lists">
         <h1>Absent Students List</h1>
