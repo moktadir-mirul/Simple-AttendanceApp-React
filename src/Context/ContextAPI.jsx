@@ -1,4 +1,5 @@
-import { createContext, useState, useReducer } from "react";
+import { createContext, useReducer } from "react";
+import App from "../App";
 
 
 export const ContextFunction = createContext();
@@ -83,7 +84,7 @@ const studentReducer = (state, action) => {
           //   }
           // }
           // case 'Send_Absent_list': {
-          //               const updatedList = state.students.map((student) => {
+          //     const updatedList = state.students.map((student) => {
           //     if(student.id === action.payload) {
           //       return {
           //         ...state,
@@ -97,7 +98,7 @@ const studentReducer = (state, action) => {
           //     students: updatedList
           //   }
           // }
-          // case 'Toggle_list': {
+          // case 'Toggle_List': {
           //   const updatedList = state.students.map((student) => {
           //     if(student.id === action.payload) {
           //       return {
@@ -113,8 +114,8 @@ const studentReducer = (state, action) => {
           //   }
           // }
           case 'Update_Status': {
-            const updatedList = state. students.map((student) => {
-              if(student.id === action.payload){
+            const updatedList = state.students.map((student) => {
+              if(student.id === action.payload.id){
                 return {
                   ...state,
                   isPresent: action.payload.isPresent
@@ -124,7 +125,7 @@ const studentReducer = (state, action) => {
             })
             return {
               ...state,
-              students: updatedList
+              students: updatedList,
             }
           }
       }
@@ -226,9 +227,9 @@ const StudentComponentFunction = (props) => {
                     }
 
     return (
-        <ContextFunction.Provider value={CtxValue}>
+          <ContextFunction.Provider value={CtxValue}>
             {props.children}
-        </ContextFunction.Provider>
+          </ContextFunction.Provider>
     )
 }
 

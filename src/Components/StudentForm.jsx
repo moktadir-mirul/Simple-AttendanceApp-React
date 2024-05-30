@@ -1,10 +1,11 @@
 import { useContext } from "react";
 import { ContextFunction } from "../Context/ContextAPI";
+
 function StudentForm() {
 
-    const {studentState, dispatch, submitHandler} = useContext(ContextFunction);
-
-  // console.log(studentState.editMode, 'Is there any editMode');
+  const {studentState, dispatch, submitHandler} = useContext(ContextFunction);
+  
+ 
     return (
         <div className="inputArea">
         <form onSubmit={submitHandler} className="formClass">
