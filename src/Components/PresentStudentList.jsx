@@ -11,7 +11,7 @@ function PresentStudentsList() {
         {studentState.students.filter((student) => student.isPresent === true).map((student) => (
           <li key={student.id}>
             {student.name}
-            <button className="btnAll" onClick={() => dispatch({type: 'Toggle_List', payload: student.id})}>Accidentally Added</button>
+            <button className="btnAll" onClick={() => dispatch({type: 'Update_Status', payload: {id: student.id, isPresent: !student.isPresent}})}>Accidentally Added</button>
           </li>
         ))}
       </div>
