@@ -3,18 +3,18 @@ import { ContextFunction } from "../Context/ContextAPI";
 
 function AllStudentsList () {
 
-    const {editHandler, removeHandler,sentToPresentList, sentToAbsentList, students} = useContext(ContextFunction);
+    const {studentState, dispatch} = useContext(ContextFunction);
 
     return (
         <div className="all-students lists">
         <h1>All Students</h1>
-        {students.map((student) => (
+        {studentState.students.map((student) => (
           <li key={student.id}>
             {student.name}
-            <button className="btnAll" onClick={() => editHandler(student)}>Edit</button>
-            <button className="btnAll" onClick={() => removeHandler(student.id)}>Delete</button>
-            <button className="btnAll" onClick={() => sentToPresentList(student)}>Add to Present List</button>
-            <button className="btnAll" onClick={() => sentToAbsentList(student)}>Add to Absent List</button>
+            <button className="btnAll" onClick={() => dispatch({type: 'Edit_Student', payload: student})}>Edit</button>
+            <button className="btnAll" onClick={() => dispatch({type: 'Remove_Student', payload: student.id})}>Delete</button>
+            <button className="btnAll" onClick={() => dispatch({type: 'Update_status', payload:{id: student.id, isPresent: true}})}>Add to Present List</button>
+            <button className="btnAll" onClick={() => dispatch({type: 'Update_status', payload:{id: student.id, isPresent: false}})}>Add to Absent List</button>
           </li>
         ))}
       </div>

@@ -7,6 +7,6 @@ import App2 from './App2.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <StudentComponentFunction>
-    <App2 />
+    <App />
   </ StudentComponentFunction>
 )
