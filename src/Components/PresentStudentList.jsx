@@ -3,17 +3,20 @@ import { ContextFunction } from "../Context/ContextAPI";
 
 function PresentStudentsList() {
     
-    const {studentStates, dispatch} = useContext(ContextFunction);
-
+    const { studentStates, dispatch } = useContext(ContextFunction);
+    const filArr = studentStates.students.filter((student) => student.isPresent === true);
+    console.log(filArr);
     return (
         <div className="present-list lists">
         <h1>Present Students List</h1>
-        {studentStates.students.filter((student) => student.isPresent === true).map((item) => (
-          <li key={Date.now()+''}>
-            {item.name}
-            <button className="btnAll" onClick={() => dispatch({type: 'UPDATE-STATUS', payload:{id: item.id, isPresent: !item.isPresent}})}>Accidentally Added</button>
-          </li>
-        ))}
+        <ul>
+            {studentStates.students.filter((student) => student.isPresent === true).map((item) => (
+              <li key={item.id}>
+                {item.name}
+                <button className="btnAll" onClick={() => dispatch({type: 'CHANGE-STATUS', payload:{id: item.id, isPresent: !item.isPresent}})}>Accidentally Added</button>
+              </li>
+            ))}
+        </ul>
       </div>
     )
 }

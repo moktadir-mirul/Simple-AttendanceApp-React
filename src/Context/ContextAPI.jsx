@@ -6,7 +6,7 @@ export const ContextFunction = createContext();
 const initialState = {studentName: '',
                       students: [],
                       editMode: false,
-                      editableStudents: null
+                      editableStudents: null,
 }
 
 const StudentReducer = (state, action) => {
@@ -38,8 +38,8 @@ const StudentReducer = (state, action) => {
     case 'CREATE-STUDENT': {
       const newStudent = {
                           id: Date.now() + '',
-                          name: studentName,
-                          isPresent: undefined 
+                          name: state.studentName,
+                          isPresent: undefined ,
                           }
             return {
               ...state,
@@ -68,19 +68,28 @@ const StudentReducer = (state, action) => {
     }
 
     case 'CHANGE-STATUS': {
+
       const updatedList = state.students.map((student) => {
+        // if (student.isPresent === true || student.isPresent === false) {
+        //   return alert(`The student is already in ${student.isPresent === true ? 'Present List' : 'Absent List'}`)
+        // }else 
+        
         if(student.id === action.payload.id) {
           return {
-            ...state,
+            ...student,
             isPresent: action.payload.isPresent
           }
         }
-        return student
+        return student;
       })
       return {
         ...state,
         students: updatedList,
       }
+    }
+
+    default: {
+      return state;
     }
 
   }
@@ -96,7 +105,9 @@ const StudentComponentFunction = (props) => {
       studentStates.editMode === true ? dispatch({type: 'UPDATE-STUDENT'}):dispatch({type: 'CREATE-STUDENT'});
     }
 
-    const CtxValue = {studentStates, dispatch, submitHandler}
+    const CtxValue = {studentStates, 
+                      dispatch, 
+                      submitHandler}
 
     return (
         <ContextFunction.Provider value={CtxValue}>
