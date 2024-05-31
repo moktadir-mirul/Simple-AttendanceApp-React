@@ -115,9 +115,9 @@ const studentReducer = (state, action) => {
           // }
           case 'Update_Status': {
             const updatedList = state.students.map((student) => {
-              if(student.id === action.payload.id){
+               if(student.id === action.payload.id){
                 return {
-                  ...state,
+                  ...student,
                   isPresent: action.payload.isPresent
                 }
               }
