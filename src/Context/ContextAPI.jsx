@@ -70,10 +70,6 @@ const StudentReducer = (state, action) => {
     case 'CHANGE-STATUS': {
 
       const updatedList = state.students.map((student) => {
-        // if (student.isPresent === true || student.isPresent === false) {
-        //   return alert(`The student is already in ${student.isPresent === true ? 'Present List' : 'Absent List'}`)
-        // }else 
-        
         if(student.id === action.payload.id) {
           return {
             ...student,

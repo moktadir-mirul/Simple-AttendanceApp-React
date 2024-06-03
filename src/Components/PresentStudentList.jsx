@@ -4,8 +4,6 @@ import { ContextFunction } from "../Context/ContextAPI";
 function PresentStudentsList() {
     
     const { studentStates, dispatch } = useContext(ContextFunction);
-    // const filArr = studentStates.students.filter((student) => student.isPresent === true);
-    // console.log(filArr);
     return (
         <div className="present-list lists">
         <h1>Present Students List</h1>

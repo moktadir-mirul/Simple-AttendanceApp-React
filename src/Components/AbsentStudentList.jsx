@@ -3,7 +3,6 @@ import { ContextFunction } from "../Context/ContextAPI";
 
 function AbsentStudentsList() {
     const {studentStates, dispatch} = useContext(ContextFunction);
-    // const AnArr = studentStates.students.filter((student) => student.isPresent === false)
     return (
         <div className="absent-list lists">
         <h1>Absent Students List</h1>
