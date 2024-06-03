@@ -1,48 +1,27 @@
+import { useContext } from "react";
+import { ContextFunction } from "../Context/ContextAPI";
 
-function StudentForm(props) {
+function StudentForm()  {
 
-    const {editMode, setEditMode, setStudentName, setEditableStudents, editableStudents, setStudents, students, studentName} = props;
+    const {studentStates, dispatch, submitHandler} = useContext(ContextFunction);
 
-    const inputHandler = (title) => {
-        setStudentName(title.target.value);
-    }
-
-    const createHandler = () => {
-        const newStudent = {
-          id: Date.now() + '',
-          name: studentName,
-          isPresent: undefined,
-      }
-      setStudents([newStudent, ...students]);
-      setStudentName('');
-  }
-
-  const updateHandler = () => {
-    const updatedStudentList = students.map((student) => {
-      if (student.id === editableStudents.id) {
-        return {...student, name:studentName}
-      }
-      return student;
-    })
-    setStudents(updatedStudentList);
-    setStudentName('');
-    setEditMode(false);
-    setEditableStudents(null);
-  }
-  
-    const submitHandler = (event) => {
-      event.preventDefault();
-      if (studentName.trim() === '') return alert('Please enter a valid Name');
-      editMode === true ? updateHandler():createHandler();
-    }
+    console.log(studentStates);
 
     return (
         <div className="inputArea">
-        <form onSubmit={submitHandler} className={editMode ? 'editMode1' : 'inputField1'}>
-          <input type="text" className={editMode ? 'editMode' : 'inputField'} value={studentName} onChange={inputHandler} placeholder="Enter the Student Name" />
-          <button type='submit' className={editMode ? 'editBtn' : 'btnAll'}>{editMode === true ? 'Update Student Name' : 'Add Student Name'}</button>
+        <form onSubmit={submitHandler} className="formClass">
+          <input  type="text"
+                  className={studentStates.editMode ? 'editMode' : 'inputField'}
+                  value={studentStates.studentName} 
+                  onChange={(e) => dispatch({type: 'CHANGE-STUDENT', payload: e.target.value})} 
+                  placeholder="Enter the Student Name" />
+          <button   type='submit' 
+                    className={studentStates.editMode ? 'editBtn' : 'btnAll'}>
+                  {studentStates.editMode === true ? 'Update Student Name' : 'Add Student Name'}
+          </button>
         </form>
       </div>
     )
 }
 export default StudentForm;
+
