@@ -1,0 +1,54 @@
+import { useContext } from "react";
+import { CartContext } from "../Context/CartContext";
+import { CartItem } from "../Components/CartItem"
+export const Cart = () => {
+
+    const {cart, dispatch} = useContext(CartContext);
+	console.log(cart);
+    let totalPrice = 0;
+    cart.forEach((item) => {
+        totalPrice += item.quantity*item.price
+		console.log(item, 'item')
+    });
+    return (
+		<>
+			<div className="account-setting__content">
+				<div className="account-setting__content__title">
+					<h4>Product list in your cart</h4>
+				</div>
+				<div className="product-table-container">
+					<table>
+						<thead>
+							<tr>
+								<th>Image</th>
+								<th>PRODUCT Title</th>
+								<th>Price</th>
+								<th>Quantity</th>
+								<th>Subtotal</th>
+								<th>Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							{cart.map((element) => {
+								console.log(element, 'element'),
+                                <CartItem element={element} />
+                            })}
+						</tbody>
+					</table>
+				</div>
+				<h2 className="total-price">
+					Your Total Price Will be ${totalPrice} 
+				</h2>
+				<div className="mt-50">
+					<button
+						type="button"
+						className="btn-big"
+                        onClick={() => dispatch({type:"CLEAR-CART"})}
+					>
+						Clear Cart
+					</button>
+				</div>
+			</div>
+		</>
+	);
+}

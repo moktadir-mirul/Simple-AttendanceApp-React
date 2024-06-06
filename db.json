@@ -1,0 +1,24 @@
+{
+    "products": [{
+                    "id": "1",
+                    "title":"Calculator",
+                    "price": 500,
+                    "description": "Casio Scientific Calculator ES-991(Original)",
+                    "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/Casio_Scientific_Calculator_2nd_edition_-CASIO-1f029-322053.jpg"
+                },
+                {
+                    "id": "2",
+                    "title":"Stapler",
+                    "price": 200,
+                    "description": "Heavy Duty Kangaroo Stapler HD-45",
+                    "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/Heavy_Duty_Stapler_Machine_Kangaro_Hp_45-Kangaro-87704-290305.jpg"
+                },
+                {
+                    "id": "3",
+                    "title":"Digital Alarm Clock",
+                    "price": 400,
+                    "description": "Electronic Timer 24 Hour Digital Alarm Clock with USB Charger",
+                    "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/Kitchen_Clock_English_24_hour_Electronic-Non_Brand-c176f-355466.jpg"
+                }
+                ]
+}

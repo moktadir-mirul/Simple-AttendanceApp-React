@@ -5,10 +5,7 @@ import StudentSection from './Components/StudentSection';
 function App() {
 
   return (
-      <div className="mainArea">
-        <StudentForm />
-        <StudentSection />
-      </div>
+ <></>
   )
 }
 
