@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { CartContext } from "../Context/CartContext";
-import { CartItem } from "../Components/CartItem"
+import { CartItem } from "../Components/CartItem";
+
 export const Cart = () => {
 
     const {cart, dispatch} = useContext(CartContext);
@@ -29,10 +30,10 @@ export const Cart = () => {
 							</tr>
 						</thead>
 						<tbody>
-							{cart.map((element) => {
-								console.log(element, 'element'),
-                                <CartItem element={element} />
-                            })}
+							{cart.map((item) => (
+								console.log(item, 'element'),
+                                <CartItem key={item.id} item={item} />
+                            ))}
 						</tbody>
 					</table>
 				</div>

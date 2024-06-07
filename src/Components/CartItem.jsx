@@ -4,12 +4,12 @@ import { CartContext } from "../Context/CartContext";
 
 
 
-export const CartItem = ({element}) => {
-	console.log(element, 'CartItem');
+export const CartItem = ({ item }) => {
+	console.log(item, 'CartItem');
 
 	const [itemQuantity, setItemQuantity] = useState(item.quantity);
 
-    const { dispatch } =useContext(CartContext);
+    const { dispatch } = useContext(CartContext);
 
 	return (
 		<tr>
@@ -79,7 +79,7 @@ export const CartItem = ({element}) => {
                         }
                         className="cross-icon"
                     >
-                        x
+                        X
                     </button>
 			</td>
 		</tr>

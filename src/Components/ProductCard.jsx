@@ -4,7 +4,8 @@ const ProductList = ({ product }) => {
     const {dispatch} = useContext(CartContext);
     const AddItemHandler = () => {
             dispatch({type: "ADD-CART", payload: product})
-            alert('Item added to cart successfully.')
+            alert(`${product.title} added to cart successfully.`)
+			console.log(product);
     }
 	return (
 		<div className="ingredient">

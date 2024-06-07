@@ -1,4 +1,35 @@
-{
+{   "posts":    [
+                    {
+                        "userId": 1,
+                        "id": 1,
+                        "title": "The North Atlantic Treaty Is Signed (April 4, 1949)",
+                        "body": "The signing of the North Atlantic Treaty meant that, after intervening twice in the previous 32 years to restore peace in Europe, the U.S. was finally committed to an international alliance in peacetime, focused on preventing war in the first place."
+                    },
+                    {
+                        "userId": 1,
+                        "id": 2,
+                        "title": "The Great Migration Begins (1915)",
+                        "body": "In todays world African Americans are viewed as urban people, but thats a very new phenomenon: The vast majority of time that African Americans have been on this continent, theyve been primarily Southern and rural. That changed with the Great Migration, a mass relocation of 6 million African Americans from the Jim Crow South to the North and West, starting in 1915."
+                    },
+                    {
+                        "userId": 1,
+                        "id": 3,
+                        "title": "The Prophet Is Published (Sept. 23, 1923)",
+                        "body": "In the aftermath of World War I, the Lebanese-born, Boston-based poet-philosopher Kahlil Gibran wrote what would become one of the world’s most translated works of philosophy: The Prophet. Sometimes it takes a foreigner to speak the voice of Americans’ inner conscience"
+                    },
+                    {
+                        "userId": 1,
+                        "id": 4,
+                        "title": "The KKK Marches in Washington (Aug. 8, 1925",
+                        "body": "When the KKK paraded down Pennsylvania Avenue in Washington, D.C., the headline in the New York Times declared “Sight Astonishes Capital: Robed, but Unmasked Hosts in White Move Along Avenue.” The marchers, the article noted, received “a warm reception.” "
+                    },
+                    {
+                        "userId": 1,
+                        "id": 5,
+                        "title": "Thomas Dorsey Invents the Gospel Blues (1932)",
+                        "body": "In Chicago in 1932, an African American composer named Thomas A. Dorsey, who had been a nightclub jazz pianist, wrote a song inspired by his wifes death in childbirth. The song, “Take My Hand, Precious Lord,” unexpectedly became the foundation for the modern African American gospel music tradition."
+                    }
+                ],   
     "products": [{
                     "id": "1",
                     "title":"Calculator",
