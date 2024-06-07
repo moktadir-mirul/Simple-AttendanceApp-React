@@ -847,3 +847,22 @@ textarea {
   background: hsla(144, 27%, 54%, 0.694);
   color: white;
 }
+.posthd {
+  text-align: center;
+  font-size: 40px;
+  color: brown;
+  margin: 20px;
+}
+.postul{ 
+  text-align: center;
+  font-size: 25px;
+  color: #2a49af;
+  margin: 5px;
+  list-style: square;
+}
+#postli {
+  text-align: center;
+  color: chocolate;
+  margin: 5px;
+  list-style: disc;
+}
