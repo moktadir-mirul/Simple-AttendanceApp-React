@@ -5,11 +5,9 @@ import { CartItem } from "../Components/CartItem";
 export const Cart = () => {
 
     const {cart, dispatch} = useContext(CartContext);
-	console.log(cart);
     let totalPrice = 0;
     cart.forEach((item) => {
         totalPrice += item.quantity*item.price
-		console.log(item, 'item')
     });
     return (
 		<>

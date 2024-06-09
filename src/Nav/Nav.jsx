@@ -15,6 +15,12 @@ export const Nav = () => {
 						<li>
 							<Link to="/posts">Posts</Link>
 						</li>
+						<li>
+							<Link to="/user">User</Link>
+						</li>
+						<li>
+							<Link to="/counter">Counter</Link>
+						</li>
 					</ul>
 				</nav>
 			</div>

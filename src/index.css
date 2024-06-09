@@ -855,14 +855,26 @@ textarea {
 }
 .postul{ 
   text-align: center;
-  font-size: 25px;
-  color: #2a49af;
-  margin: 5px;
-  list-style: square;
+  margin: 5px; 
 }
 #postli {
   text-align: center;
   color: chocolate;
   margin: 5px;
   list-style: disc;
+  font-size: 25px;
+}
+#postp {
+  text-align: center;
+  color: crimson;
+  margin: 5px;
+  font-size: 25px;
+}
+#postli:hover {
+  transition: 0.2s;
+  background-color: rgb(245, 202, 211);
+  text-decoration: underline;
+}
+.btn-white{
+  margin-left: 10px;
 }
