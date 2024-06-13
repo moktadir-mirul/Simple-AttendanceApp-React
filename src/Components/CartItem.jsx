@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { useContext } from "react";
-import { CartContext } from "../Context/CartContext";
+import { useDispatch } from "react-redux";
 
 
 
@@ -8,7 +7,7 @@ export const CartItem = ({ item }) => {
 	
 	const [itemQuantity, setItemQuantity] = useState(item.quantity);
 
-    const { dispatch } = useContext(CartContext);
+    const  dispatch  = useDispatch();
 
 	return (
 		<tr>
@@ -48,9 +47,8 @@ export const CartItem = ({ item }) => {
 						type="number"
 						name="product-qty"
 						value={itemQuantity}
-						
 						min="1"
-                        onClick={(event)=> {dispatch({type: "MODIFY-QUANTITY", payload: {id:item.id, quantity: Number(event.target.value)}})
+                        onChange={(event)=> {dispatch({type: "MODIFY-QUANTITY", payload: {id:item.id, quantity: Number(event.target.value)}})
                         setItemQuantity(Number(event.target.value))}
                     }
 					/>
