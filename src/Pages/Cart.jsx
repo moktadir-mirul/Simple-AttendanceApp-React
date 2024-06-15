@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { CartItem } from "../Components/CartItem";
+import { clearCart } from "../ActionCreator/cartAction";
 
 export const Cart = () => {
 
@@ -31,7 +32,6 @@ export const Cart = () => {
 						</thead>
 						<tbody>
 							{cart.map((item) => (
-								console.log(item, 'element'),
                                 <CartItem key={item.id} item={item} />
                             ))}
 						</tbody>
@@ -44,7 +44,7 @@ export const Cart = () => {
 					<button
 						type="button"
 						className="btn-big"
-                        onClick={() => dispatch({type:"CLEAR-CART"})}
+                        onClick={() => dispatch(clearCart())}
 					>
 						Clear Cart
 					</button>

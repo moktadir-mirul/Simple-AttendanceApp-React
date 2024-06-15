@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
+import { modifyQuantity } from "../ActionCreator/cartAction";
 
 
 
@@ -31,7 +32,7 @@ export const CartItem = ({ item }) => {
 						data-action="minus"
 						type="button"
 						onClick={()=> {if (itemQuantity > 1) {
-                            dispatch({type: "MODIFY-QUANTITY", payload: {id:item.id, quantity: itemQuantity - 1}})
+                            dispatch(modifyQuantity({id:item.id, quantity: itemQuantity - 1}))
 							setItemQuantity(itemQuantity-1)
                         } else {
                             alert('Quantity cannot be zero')
@@ -48,7 +49,7 @@ export const CartItem = ({ item }) => {
 						name="product-qty"
 						value={itemQuantity}
 						min="1"
-                        onChange={(event)=> {dispatch({type: "MODIFY-QUANTITY", payload: {id:item.id, quantity: Number(event.target.value)}})
+                        onChange={(event)=> {dispatch(modifyQuantity({id:item.id, quantity: Number(event.target.value)}))
                         setItemQuantity(Number(event.target.value))}
                     }
 					/>
@@ -56,7 +57,7 @@ export const CartItem = ({ item }) => {
 						className="qty-count qty-count--add"
 						data-action="add"
 						type="button"
-                        onClick={()=> {dispatch({type: "MODIFY-QUANTITY", payload: {id:item.id, quantity: itemQuantity + 1}});
+                        onClick={()=> {dispatch(modifyQuantity({id:item.id, quantity: itemQuantity + 1}));
                         setItemQuantity(itemQuantity+1); }
                         }>
 						<figure>

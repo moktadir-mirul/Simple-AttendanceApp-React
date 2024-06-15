@@ -1,9 +1,10 @@
 import { useDispatch } from "react-redux";
+import { addToCart } from "../ActionCreator/cartAction";
 
 const ProductList = ({ product }) => {
     const dispatch = useDispatch();
     const AddItemHandler = () => {
-            dispatch({type: "ADD-CART", payload: product})
+            dispatch(addToCart(product))
             alert(`${product.title} added to cart successfully.`)
     }
 	return (
