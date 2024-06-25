@@ -5,7 +5,7 @@ const ProductList = ({ product }) => {
     const dispatch = useDispatch();
     const AddItemHandler = () => {
             dispatch(addToCart(product))
-            alert(`${product.title} added to cart successfully.`)
+            // alert(`${product.title} added to cart successfully.`)
     }
 	return (
 		<div className="ingredient">

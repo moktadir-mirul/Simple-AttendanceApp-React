@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { modifyQuantity } from "../ActionCreator/cartAction";
+import { modifyQuantity, removeItem } from "../ActionCreator/cartAction";
 
 
 
@@ -70,10 +70,7 @@ export const CartItem = ({ item }) => {
 			<td>
                 <button
                         onClick={() =>
-                            dispatch({
-                                type: "REMOVE-ITEM",
-                                payload: item.id,
-                            })
+                            dispatch(removeItem(item.id))
                         }
                         className="cross-icon"
                     >
