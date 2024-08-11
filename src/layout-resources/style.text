@@ -1,3 +1,4 @@
+```
 /* Css Resets */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
@@ -68,12 +69,12 @@ input[type=search]::-webkit-search-decoration,
 input[type=search]::-webkit-search-results-button,
 input[type=search]::-webkit-search-results-decoration {
     -webkit-appearance: none;
-    /* -moz-appearance: none; */
+    -moz-appearance: none;
 }
 
 input[type=search] {
-    /* -webkit-appearance: none;
-    -moz-appearance: none; */
+    -webkit-appearance: none;
+    -moz-appearance: none;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
@@ -251,7 +252,7 @@ button,
 html input[type="button"], /* 1 */
 input[type="reset"],
 input[type="submit"] {
-    /* -webkit-appearance: button; 2 */
+    -webkit-appearance: button; /* 2 */
     cursor: pointer; /* 3 */
     overflow: visible;  /* 4 */
 }
@@ -287,7 +288,7 @@ input[type="radio"] {
  */
 
 input[type="search"] {
-    /* -webkit-appearance: textfield; 1 */
+    -webkit-appearance: textfield; /* 1 */
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box; /* 2 */
     box-sizing: content-box;
@@ -847,34 +848,4 @@ textarea {
   background: hsla(144, 27%, 54%, 0.694);
   color: white;
 }
-.posthd {
-  text-align: center;
-  font-size: 40px;
-  color: brown;
-  margin: 20px;
-}
-.postul{ 
-  text-align: center;
-  margin: 5px; 
-}
-#postli {
-  text-align: center;
-  color: chocolate;
-  margin: 5px;
-  list-style: disc;
-  font-size: 25px;
-}
-#postp {
-  text-align: center;
-  color: crimson;
-  margin: 5px;
-  font-size: 25px;
-}
-#postli:hover {
-  transition: 0.2s;
-  background-color: rgb(245, 202, 211);
-  text-decoration: underline;
-}
-.btn-white{
-  margin-left: 10px;
-}
+```

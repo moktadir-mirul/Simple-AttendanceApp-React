@@ -1,0 +1,172 @@
+{   "posts":    [
+                    {
+                        "userId": 1,
+                        "id": 1,
+                        "title": "The North Atlantic Treaty Is Signed (April 4, 1949)",
+                        "body": "The signing of the North Atlantic Treaty meant that, after intervening twice in the previous 32 years to restore peace in Europe, the U.S. was finally committed to an international alliance in peacetime, focused on preventing war in the first place."
+                    },
+                    {
+                        "userId": 1,
+                        "id": 2,
+                        "title": "The Great Migration Begins (1915)",
+                        "body": "In todays world African Americans are viewed as urban people, but thats a very new phenomenon: The vast majority of time that African Americans have been on this continent, theyve been primarily Southern and rural. That changed with the Great Migration, a mass relocation of 6 million African Americans from the Jim Crow South to the North and West, starting in 1915."
+                    },
+                    {
+                        "userId": 1,
+                        "id": 3,
+                        "title": "The Prophet Is Published (Sept. 23, 1923)",
+                        "body": "In the aftermath of World War I, the Lebanese-born, Boston-based poet-philosopher Kahlil Gibran wrote what would become one of the world’s most translated works of philosophy: The Prophet. Sometimes it takes a foreigner to speak the voice of Americans’ inner conscience"
+                    },
+                    {
+                        "userId": 1,
+                        "id": 4,
+                        "title": "The KKK Marches in Washington (Aug. 8, 1925)",
+                        "body": "When the KKK paraded down Pennsylvania Avenue in Washington, D.C., the headline in the New York Times declared “Sight Astonishes Capital: Robed, but Unmasked Hosts in White Move Along Avenue.” The marchers, the article noted, received “a warm reception.” "
+                    },
+                    {
+                        "userId": 1,
+                        "id": 5,
+                        "title": "Thomas Dorsey Invents the Gospel Blues (1932)",
+                        "body": "In Chicago in 1932, an African American composer named Thomas A. Dorsey, who had been a nightclub jazz pianist, wrote a song inspired by his wifes death in childbirth. The song, “Take My Hand, Precious Lord,” unexpectedly became the foundation for the modern African American gospel music tradition."
+                    }
+                ],   
+    "products": [{
+                    "id": "1",
+                    "title":"Calculator",
+                    "price": 500,
+                    "description": "Casio Scientific Calculator ES-991(Original)",
+                    "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/Casio_Scientific_Calculator_2nd_edition_-CASIO-1f029-322053.jpg"
+                },
+                {
+                    "id": "2",
+                    "title":"Stapler",
+                    "price": 200,
+                    "description": "Heavy Duty Kangaroo Stapler HD-45",
+                    "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/Heavy_Duty_Stapler_Machine_Kangaro_Hp_45-Kangaro-87704-290305.jpg"
+                },
+                {
+                    "id": "3",
+                    "title":"Digital Alarm Clock",
+                    "price": 400,
+                    "description": "Electronic Timer 24 Hour Digital Alarm Clock with USB Charger",
+                    "image": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/Kitchen_Clock_English_24_hour_Electronic-Non_Brand-c176f-355466.jpg"
+                }
+                ],
+    "users":    [
+        {
+          "id": 1,
+          "name": "Leanne Graham",
+          "username": "Bret",
+          "email": "Sincere@april.biz",
+          "address": {
+            "street": "Kulas Light",
+            "suite": "Apt. 556",
+            "city": "Gwenborough",
+            "zipcode": "92998-3874",
+            "geo": {
+              "lat": "-37.3159",
+              "lng": "81.1496"
+            }
+          },
+          "phone": "1-770-736-8031 x56442",
+          "website": "hildegard.org",
+          "company": {
+            "name": "Romaguera-Crona",
+            "catchPhrase": "Multi-layered client-server neural-net",
+            "bs": "harness real-time e-markets"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Ervin Howell",
+          "username": "Antonette",
+          "email": "Shanna@melissa.tv",
+          "address": {
+            "street": "Victor Plains",
+            "suite": "Suite 879",
+            "city": "Wisokyburgh",
+            "zipcode": "90566-7771",
+            "geo": {
+              "lat": "-43.9509",
+              "lng": "-34.4618"
+            }
+          },
+          "phone": "010-692-6593 x09125",
+          "website": "anastasia.net",
+          "company": {
+            "name": "Deckow-Crist",
+            "catchPhrase": "Proactive didactic contingency",
+            "bs": "synergize scalable supply-chains"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Clementine Bauch",
+          "username": "Samantha",
+          "email": "Nathan@yesenia.net",
+          "address": {
+            "street": "Douglas Extension",
+            "suite": "Suite 847",
+            "city": "McKenziehaven",
+            "zipcode": "59590-4157",
+            "geo": {
+              "lat": "-68.6102",
+              "lng": "-47.0653"
+            }
+          },
+          "phone": "1-463-123-4447",
+          "website": "ramiro.info",
+          "company": {
+            "name": "Romaguera-Jacobson",
+            "catchPhrase": "Face to face bifurcated interface",
+            "bs": "e-enable strategic applications"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Patricia Lebsack",
+          "username": "Karianne",
+          "email": "Julianne.OConner@kory.org",
+          "address": {
+            "street": "Hoeger Mall",
+            "suite": "Apt. 692",
+            "city": "South Elvis",
+            "zipcode": "53919-4257",
+            "geo": {
+              "lat": "29.4572",
+              "lng": "-164.2990"
+            }
+          },
+          "phone": "493-170-9623 x156",
+          "website": "kale.biz",
+          "company": {
+            "name": "Robel-Corkery",
+            "catchPhrase": "Multi-tiered zero tolerance productivity",
+            "bs": "transition cutting-edge web services"
+          }
+        },
+        {
+          "id": 5,
+          "name": "Chelsey Dietrich",
+          "username": "Kamren",
+          "email": "Lucio_Hettinger@annie.ca",
+          "address": {
+            "street": "Skiles Walks",
+            "suite": "Suite 351",
+            "city": "Roscoeview",
+            "zipcode": "33263",
+            "geo": {
+              "lat": "-31.8129",
+              "lng": "62.5342"
+            }
+          },
+          "phone": "(254)954-1289",
+          "website": "demarco.info",
+          "company": {
+            "name": "Keebler LLC",
+            "catchPhrase": "User-centric fault-tolerant solution",
+            "bs": "revolutionize end-to-end systems"
+          }
+        }
+      ]
+}

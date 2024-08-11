@@ -106,9 +106,10 @@ const StudentComponentFunction = (props) => {
                       submitHandler}
 
     return (
-        <ContextFunction.Provider value={CtxValue}>
-            {props.children}
-        </ContextFunction.Provider>
+      <></>
+        // <ContextFunction.Provider value={CtxValue}>
+        //     {props.children}
+        // </ContextFunction.Provider>
     )
 }
 
