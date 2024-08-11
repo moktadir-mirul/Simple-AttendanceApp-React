@@ -11,7 +11,7 @@ export const Posts = () => {
             {errorMessage && <h2 style={{color:"red", textAlign:"center", fontSize:"30px"}}>!!!Warning: Data loading is failed!!!</h2>}
             
                 {posts.map((post) => (
-                    <li id="postli" key={post.id}><Link>{post.title}</Link></li>
+                    <li id="postli" key={post.id}><Link to={`/posts/${post.id}`}>{post.title}</Link></li>
                 ))}
             
         </>

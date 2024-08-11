@@ -15,6 +15,7 @@ export const PostDetails = () => {
             <p id="postp"><strong>Phone: </strong>{details?.phone},</p>
             <p id="postp"><strong>Website: </strong>{details?.website}.</p>
             
+            <h3 style={{textAlign: "center", color: "tomato", fontSize: "20px", textDecoration: "underline"}}><Link to={"/user"}>Go Back</Link></h3>
         </div>
 
     )
